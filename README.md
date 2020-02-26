@@ -28,3 +28,16 @@ Or you can use Docker to build the native executable using: `./mvnw package -Pna
 You can then execute your binary: `./target/tug-of-tic-tac-toe-war-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image-guide .
+
+## Move sample
+
+Post to URL http://localhost:8080/lines .
+
+```json
+{
+    "line": 0,
+    "pos": 2,
+    "x": true
+}
+```
+

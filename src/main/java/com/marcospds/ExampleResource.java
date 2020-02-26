@@ -1,19 +1,28 @@
 package com.marcospds;
 
+import java.util.List;
+
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import io.vertx.core.json.Json;
-
-@Path("/hello")
+@Path("/lines")
 public class ExampleResource {
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public String hello() {
-    	
-        return "[{\"name\":\"eaaaaarl of Lemongrab\",\"age\":\"Unknown\",\"species\":\"Lemon Candy\",\"occupation\":\"Earl, Heir to the Candy Kingdom Throne\"},{\"name\":\"Bonnibel Bubblegum\",\"age\":\"19\",\"species\":\"Gum Person\",\"occupation\":\"Returned Ruler of the Candy Kingdom\"}]";
-    }
+	private static TicTacToeTable table = new TicTacToeTable();
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<TicTacToeLine> getTable() {
+
+		return table.getLines();
+	}
+
+	@POST
+	public void setTable(MoveCommand move) {
+
+		table.getLines().get(move.getLine()).move(move.getPos(), move.isX());
+	}
 }
