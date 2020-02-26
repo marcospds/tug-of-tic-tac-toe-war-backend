@@ -31,7 +31,7 @@ If you want to learn more about building native executables, please consult http
 
 ## Frontend
 
-Get the frontend at [tic-tac-toe-frondend](https://github.com/marcospds/tug-of-tic-tac-toe-war).
+Get the frontend at [tic-tac-toe-frontend](https://github.com/marcospds/tug-of-tic-tac-toe-war).
 
 ## Move sample
 
