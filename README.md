@@ -29,9 +29,13 @@ You can then execute your binary: `./target/tug-of-tic-tac-toe-war-1.0.0-SNAPSHO
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image-guide .
 
+## Frontend
+
+Get the frontend at (tic-tac-toe-frondend)[https://github.com/marcospds/tug-of-tic-tac-toe-war].
+
 ## Move sample
 
-Post to URL http://localhost:8080/lines .
+Post to URL `http://localhost:8080/lines`.
 
 ```json
 {
