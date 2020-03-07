@@ -17,7 +17,7 @@ while(true){
 
             
             
-            xhr.open("POST", "http://localhost:8080/lines", true);
+            xhr.open("POST", "http://localhost:8080/tugoftictactoewar/lines", true);
             xhr.setRequestHeader("Content-Type", "application/JSON; charset=UTF-8");
             xhr.send(msgs[msg].textContent);
         }

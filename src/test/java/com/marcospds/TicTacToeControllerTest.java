@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import io.quarkus.test.junit.QuarkusTest;
 
 @QuarkusTest
-public class ExampleResourceTest {
+public class TicTacToeControllerTest {
 
 	@Test
 	public void testHelloEndpoint() {
